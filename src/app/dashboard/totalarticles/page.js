@@ -57,12 +57,15 @@ const TotalArticles = () => {
     }
   };
 
+  const postsArray = posts?.posts;
+  
+
   return (
     <section>
       <div className="lg:-mt-20">
         <SectionTitle title={'All Articles'} />
       </div>
-      {posts.map((ar, index) => (
+      {postsArray && postsArray.map((ar, index) => (
         <div key={ar._id} className="mb-16">
           <div className="contactForm -mt-10 border-4 border-headerFooterColor rounded px-10 py-4">
             <div className="flex justify-center gap-1">
