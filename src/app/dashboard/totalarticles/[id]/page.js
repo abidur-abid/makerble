@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import updateArticle from '@/assets/updateArticle.svg'
 import { useRouter } from 'next/navigation';
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 
 const UpdateArticle = ({params}) => {
 
@@ -14,7 +14,7 @@ const UpdateArticle = ({params}) => {
   const [newTopicName, setNewTopicName] = useState('');
   const [newDescription, setNewDescription] = useState('');
   const [newDate, setDate] = useState('');
-
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
   const router = useRouter();
 
