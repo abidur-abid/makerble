@@ -2,32 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+    @apply bg-primaryColor text-gray-600
+}
+header, footer{
+    @apply bg-headerFooterColor
+}
+header{
+    @apply -mt-20 lg:-mt-0
+}
+.header,.footer{
+    @apply max-w-5xl mx-auto lg:flex justify-between items-center py-10
+}
+.mobileHeader{
+    @apply max-w-5xl mx-auto flex justify-between items-center py-10
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.mobileNavLink{
+    @apply flex justify-start items-center uppercase gap-1 text-base hover:scale-110 hover:duration-1000 font-semibold
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.logo{
+    @apply text-3xl font-bold 
+}
+.nav{
+    @apply flex justify-between items-center gap-10 uppercase 
+}
+.navLink{
+    @apply flex lg:justify-center font-semibold  items-center gap-1 hover:scale-110 hover:duration-500
+}
+.socialLink{
+    @apply flex lg:justify-start justify-center items-center gap-5 text-2xl 
+}
+.socialLink2{
+    @apply flex  justify-center items-center gap-5 text-2xl 
+}
+.socialLink a {
+    @apply hover:scale-110 hover:duration-1000
+}
+p{
+    @apply text-base
+}
+.box{
+    @apply px-12 py-8 bg-transparent font-semibold text-black shadow shadow-primaryColor border-4 border-primaryColor rounded hover:scale-110 hover:duration-1000
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.boxGroup{
+    @apply flex justify-center items-center gap-10 mx-auto
 }
+.sectionTitle{
+  @apply text-center text-4xl font-semibold uppercase border-y-4 border-headerFooterColor py-3 w-96 mx-auto
+}
+.errorMessage{
+  @apply text-2xl font-semibold text-red-500
+}
+.loadingPage{
+  @apply flex justify-center items-center my-20
+}
+.button{
+  @apply bg-headerFooterColor px-5 py-1 rounded-full font-semibold hover:bg-transparent border-4 border-headerFooterColor uppercase
+}
+.loginButton{
+  @apply bg-primaryColor px-5 py-1 rounded-full font-semibold hover:bg-transparent border-4 border-primaryColor uppercase
+}
+.loginButton{
+  @apply bg-primaryColor px-5 py-1 rounded-full font-semibold hover:bg-transparent border-4 border-primaryColor
+}
+.input{
+  @apply w-full bg-transparent border-4 border-headerFooterColor rounded-full py-2 px-16 placeholder-gray-600
+}
+.textarea{
+@apply bg-transparent border-4 border-headerFooterColor px-20
+}
+.contactInfo{
+  @apply lg:flex justify-center items-center gap-5 
+}
+.contactForm{
+  @apply lg:flex justify-between items-center 
+}
+
+
+
+
+
+
+
+
