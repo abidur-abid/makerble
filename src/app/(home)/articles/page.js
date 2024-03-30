@@ -2,8 +2,7 @@ import SectionTitle from "@/app/shared components/SectionTitle";
 import Link from "next/link";
 import articlebg from '../../../assets/articleBg.png'
 import Image from "next/image";
-
-
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const Articles = async() => {
 
@@ -11,7 +10,7 @@ const Articles = async() => {
 
     const getPosts = async () => {
         try {
-          const res = await fetch("http://localhost:3000/api/post", {
+          const res = await fetch(`${apiUrl}/api/post`, {
             cache: "no-store",
           });
       

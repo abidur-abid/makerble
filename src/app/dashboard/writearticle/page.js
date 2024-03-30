@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import writeArticle from '@/assets/writeArticle.svg'
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const WriteArticle = () => {
 
@@ -25,7 +26,7 @@ const WriteArticle = () => {
     }
     console.log(courseName, topicName , date, description);
     try {
-      const res = await fetch("http://localhost:3000/api/post", {
+      const res = await fetch(`${apiUrl}/api/post`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",

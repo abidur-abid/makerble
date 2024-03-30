@@ -2,13 +2,14 @@
 import Image from 'next/image';
 import articleBg from '@/assets/articleBg.png';
 import toast from 'react-hot-toast';
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const SingleArticle = async({ params }) => {
 
   const { id } = params;
   const getPosts = async () => {
     try {
-      const res = await fetch(`http://localhost:3000/api/post/${id}`, {
+      const res = await fetch(`${apiUrl}/api/post/${id}`, {
         cache: "no-store",
       });
   

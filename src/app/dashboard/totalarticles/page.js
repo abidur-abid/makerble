@@ -5,6 +5,7 @@ import SectionTitle from "@/app/shared components/SectionTitle";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 
 
@@ -15,7 +16,7 @@ const TotalArticles = async() => {
 
     const getPosts = async () => {
         try {
-          const res = await fetch("http://localhost:3000/api/post", {
+          const res = await fetch(`${apiUrl}/api/post`, {
             cache: "no-store",
           });
       
@@ -35,7 +36,7 @@ const TotalArticles = async() => {
         const confirmed = confirm("Are you sure?");
     
         if (confirmed) {
-          const res = await fetch(`http://localhost:3000/api/post?id=${id}`, {
+          const res = await fetch(`${apiUrl}/api/post?id=${id}`, {
             method: "DELETE",
           });
           
