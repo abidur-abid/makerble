@@ -47,7 +47,7 @@ const Articles = () => {
                 <SectionTitle title={'Articles'}/>
             </div>
             <div className="grid lg:grid-cols-3 justify-center items-center grid-cols-1 gap-5 mb-20">
-                { postsArray &&
+                { postsArray ?
                     postsArray.map((p, index) => (
                         <div className="card bg-headerFooterColor shadow-xl image-full mx-auto" key={p._id}>
                             <figure>
@@ -67,7 +67,9 @@ const Articles = () => {
                         </div>
                     )
                
-                )}
+                ) : <section className='loadingPage mx-auto'><span className="loading loading-bars loading-lg text-headerFooterColor"></span></section>
+
+                }
             </div>
         </section>
     );

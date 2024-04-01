@@ -12,8 +12,8 @@ const Education = () => {
                     <Image src={university} className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title">Jahangirnagar University</h2>
-                    <p>Urban Regional Planning</p>  
+                    <h2 className="card-title">Dhaka University</h2>
+                    <p>Public Administration</p>  
                     <p>Session: 2010-2011</p>  
                 </div>
                 </div>
@@ -22,7 +22,7 @@ const Education = () => {
                     <Image src={college} className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title">Sylhet Government College</h2>
+                    <h2 className="card-title">CPSCM</h2>
                     <p>Science Group</p>  
                     <p>Session: 2010-2011</p>  
                 </div>
@@ -32,7 +32,7 @@ const Education = () => {
                     <Image src={highSchool} className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title">JGMHS</h2>
+                    <h2 className="card-title">RBMGBHS</h2>
                     <p>Science Group</p>  
                     <p>Session: 2010-2011</p>  
                 </div>

@@ -25,7 +25,7 @@ const Header = () => {
         <header className='sticky top-0 z-50 invisible -mt-24 lg:-mt-0 lg:visible'>
             <div className='header'>
             <div>
-                <Link href={'/'} className='hover:text-secondaryColor cursor-pointer'><h1 className='logo'>MR</h1></Link>
+                <Link href={'/'} className='hover:text-secondaryColor cursor-pointer'><h1 className='logo'>SHS</h1></Link>
             </div>
             <nav>
                 <ul className='nav '>

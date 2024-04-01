@@ -48,7 +48,7 @@ const TotalArticles = () => {
         if (res.ok) {
           router.reload();
         } else {
-          toast.error('Failed to delete post');
+          toast.success('Successfully  deleted post');
         }
       } catch (error) {
         console.error('Error deleting post:', error);

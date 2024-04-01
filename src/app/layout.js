@@ -8,8 +8,8 @@ import AuthProvider from "@/authentication/AuthProvider";
 const inter = Roboto({ subsets: ["latin"] , weight: ['100', '300', '400', '500', '700', '900']});
 
 export const metadata = {
-  title: "Mustafizur Rahman",
-  description: "Lecturer at Jatiya Kabi Kazi Nazrul Islam University",
+  title: "Sadik Hasan Shuvo",
+  description: "Assistant Professor at Jatiya Kabi Kazi Nazrul Islam University",
 };
 
 export default function RootLayout({ children }) {
