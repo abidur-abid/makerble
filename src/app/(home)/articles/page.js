@@ -51,7 +51,7 @@ const Articles = () => {
                     postsArray.map((p, index) => (
                         <div className="card bg-headerFooterColor shadow-xl image-full mx-auto" key={p._id}>
                             <figure>
-                                <Image src={articlebg} alt="Article Background" width={300} height={200} className='bg-cover' />
+                                <Image src={articlebg} alt="Article Background" className='rounded-xl' layout="fill" objectFit="cover"  />
                             </figure>
                             <div className="card-body">
                                 <p className="text-xl font-bold text-headerFooterColor">{p.topicName}</p>

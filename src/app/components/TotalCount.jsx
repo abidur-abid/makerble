@@ -17,7 +17,7 @@ const TotalCount = () => {
                 <div className=" bg-headerFooterColor px-10 py-5 rounded ">
                     <GrArticle className="text-5xl mx-auto "/>
                     <h2 className=" text-lg mt-4 text-center uppercase">Total Articles</h2>
-                    <div className="text-2xl mt-4 flex justify-center"><CountUp end={50} duration={3} /></div>
+                    <div className="text-2xl mt-4 flex justify-center"><CountUp end={100} duration={3} /></div>
                 </div>
            </Link>
             <Link href={'/dashboard/writearticle'}>

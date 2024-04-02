@@ -34,28 +34,23 @@ const TotalArticles = () => {
 
   useEffect(() => {
     fetchPosts();
-  }, []); // Fetch data on component mount
+  }, [posts]); // Fetch data on component mount
 
   const handleRemovePost = async (id) => {
-    const confirmed = window.confirm('Are you sure?');
+    const confirmed = confirm("Are you sure?");
 
     if (confirmed) {
-      try {
-        const res = await fetch(`${apiUrl}/api/post?id=${id}`, {
-          method: 'DELETE',
-        });
-
-        if (res.ok) {
-          router.reload();
-        } else {
-          toast.success('Successfully  deleted post');
-        }
-      } catch (error) {
-        console.error('Error deleting post:', error);
-        toast.error('Failed to delete post');
+      const res = await fetch(`${apiUrl}/api/post?id=${id}`, {
+        method: "DELETE",
+      });
+      
+      if (res.ok) {
+        toast.success('Successfully Deleted Post')
+        router.refresh();
       }
     }
   };
+
 
   const postsArray = posts?.posts;
   

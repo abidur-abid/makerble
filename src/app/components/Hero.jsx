@@ -17,8 +17,11 @@ const Hero = () => {
           <h1 className='text-4xl my-2 lg:text-left sm:text-center md:text-center text-center font-bold'>Sadik Hasan Shuvo </h1>
           <p className='text-2xl my-2 lg:text-left sm:text-center md:text-center text-center bg-headerFooterColor rounded  font-bold px-10 py-2 mx-auto'>Assistant Professor</p>
           <h2 className='text-xl my-2 lg:text-left sm:text-center md:text-center text-center font-bold'>Local Government and Urban Development</h2>
-          <h2 className='text-mdl my-2 lg:text-left sm:text-center md:text-center text-center font-bold'>Jatiya Kabi Kazi Nazrul Islam University</h2>
-          <h2 className='text-mdl my-2 lg:text-left sm:text-center md:text-center text-center font-bold'>Trishal, Mymensingh</h2>
+          <h2 className='text-md my-2 lg:text-left sm:text-center md:text-center text-center font-bold'>Jatiya Kabi Kazi Nazrul Islam University</h2>
+          <h2 className='text-md my-2 lg:text-left sm:text-center md:text-center text-center font-bold'>Trishal, Mymensingh</h2>
+          <h2 className='text-md my-2 lg:text-left sm:text-center md:text-center text-center font-extrabold'>Phone: 01857570376</h2>
+          <h2 className='text-md my-2 lg:text-left sm:text-center md:text-center text-center font-extrabold'>Email:  sadik.jkkniu@gmail.com</h2>
+          
           
           
           <ul className='socialLink my-4'>
@@ -30,7 +33,7 @@ const Hero = () => {
           
         </div>
         <div >
-          <Image src={photo} className='rounded w-80 h-80 rounded-full mx-auto border-4 border-headerFooterColor'></Image>
+          <Image src={photo} className='rounded w-96 h-96 rounded-full mx-auto border-4 border-headerFooterColor'></Image>
         </div>
       </div>
       </>

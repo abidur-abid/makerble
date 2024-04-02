@@ -28,10 +28,6 @@ export default function Home() {
       <SectionTitle title={'My Images'}/>
       <Gallery/>
      
-      <SectionTitle title={'My Education'}/>
-      <Education/>
-      
-      
     </section>
   );
 }

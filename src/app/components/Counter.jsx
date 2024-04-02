@@ -22,14 +22,14 @@ const Counter = () => {
                    <MdTopic className="text-5xl mx-auto "/>
 
                     <h2 className="text-lg mt-4 text-center uppercase">Courses</h2>
-                    <div className="text-2xl mt-4 flex justify-center"><CountUp end={7} duration={3} /><span>+</span></div>
+                    <div className="text-2xl mt-4 flex justify-center"><CountUp end={11} duration={3} /><span>+</span></div>
                 </div>
             </Link>
            <Link href={''}>
                 <div className=" bg-headerFooterColor px-10 py-5 rounded">
                     <LiaAwardSolid className="text-5xl mx-auto "/>
                     <h2 className=" text-lg mt-4 text-center uppercase">Awards</h2>
-                    <div className="text-2xl mt-4 flex justify-center"><CountUp end={3} duration={3} /><span>+</span></div>
+                    <div className="text-2xl mt-4 flex justify-center"><CountUp end={12} duration={3} /><span>+</span></div>
                 </div>
            </Link>
             <Link href={'/dashboard/writearticle'}>

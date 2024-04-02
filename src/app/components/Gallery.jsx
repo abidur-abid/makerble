@@ -15,7 +15,7 @@ import g12 from '@/assets/g12.jpg'
 
 const Gallery = () => {
     return (
-       <section>
+       <section className='mb-20'>
          <div className='grid grid-cols-3 lg:grid-cols-4 justify-center items-center gap-5'>
             <Image src={g1} className='hover:scale-105 hover:duration-1000 rounded'/>
             <Image src={g2} className='hover:scale-105 hover:duration-1000 rounded'/>

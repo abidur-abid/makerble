@@ -14,11 +14,11 @@ const Dashboard = () => {
     return (
         <section className='mt-16 lg:mt-0'>
             <DashboardHero/>
-            <TotalCount/>
-           {/* {
-            email === 'webmaker.abid@gmail.com' && 
             
-           } */}
+           {
+            email === 'sadik.jkkniu@gmail.com' && <TotalCount/>
+            
+           }
         </section>
     );
 };
