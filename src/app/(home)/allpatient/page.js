@@ -11,48 +11,48 @@ import toast from 'react-hot-toast';
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const TotalPatients = () => {
-  const router = useRouter();
-  const [patients, setPatients] = useState([]);
+  // const router = useRouter();
+  // const [patients, setPatients] = useState([]);
 
-  const fetchPatients = async () => {
-    try {
-      const res = await fetch(`${apiUrl}/api/post`, {
-        cache: 'no-store',
-      });
+  // const fetchPatients = async () => {
+  //   try {
+  //     const res = await fetch(`${apiUrl}/api/post`, {
+  //       cache: 'no-store',
+  //     });
 
-      if (!res.ok) {
-        throw new Error('Failed to fetch patients');
-      }
+  //     if (!res.ok) {
+  //       throw new Error('Failed to fetch patients');
+  //     }
 
-      const data = await res.json();
-      setPatients(data);
-    } catch (error) {
-      console.error('Error loading patients: ', error);
-      toast.error('Failed to fetch patients');
-    }
-  };
+  //     const data = await res.json();
+  //     setPatients(data);
+  //   } catch (error) {
+  //     console.error('Error loading patients: ', error);
+  //     toast.error('Failed to fetch patients');
+  //   }
+  // };
 
-  useEffect(() => {
-    fetchPatients();
-  }, [patients]); // Fetch data on component mount
+  // useEffect(() => {
+  //   fetchPatients();
+  // }, [patients]); // Fetch data on component mount
 
-  const handleRemovePatient = async (id) => {
-    const confirmed = confirm("Are you sure?");
+  // const handleRemovePatient = async (id) => {
+  //   const confirmed = confirm("Are you sure?");
 
-    if (confirmed) {
-      const res = await fetch(`${apiUrl}/api/post?id=${id}`, {
-        method: "DELETE",
-      });
+  //   if (confirmed) {
+  //     const res = await fetch(`${apiUrl}/api/post?id=${id}`, {
+  //       method: "DELETE",
+  //     });
       
-      if (res.ok) {
-        toast.success('Successfully Deleted Patient')
-        router.refresh();
-      }
-    }
-  };
+  //     if (res.ok) {
+  //       toast.success('Successfully Deleted Patient')
+  //       router.refresh();
+  //     }
+  //   }
+  // };
 
 
-  const patientsArray = patients?.patients;
+  // const patientsArray = patients?.patients;
   
 
   return (
@@ -65,8 +65,8 @@ const TotalPatients = () => {
         <div key={'ar._id'} className="mb-16">
           <div className="contactForm -mt-10 border-4 border-headerFooterColor rounded px-10 py-4">
             <div className="flex justify-center gap-1">
-              <p className="text-lg">{'index + 1'}</p>
-              <p className="text-lg">{'ar.topicName'}</p>
+              <p className="text-lg">{'1.'}</p>
+              <p className="text-lg">{'Md. Abidur Rahman Abid'}</p>
             </div>
             <div className="flex justify-center gap-5">
               <button onClick={() => handleRemovePatient('ar._id')}>

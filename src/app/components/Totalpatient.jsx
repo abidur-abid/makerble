@@ -41,8 +41,8 @@ const TotalPatient = () => {
         <div key={'ar._id'} className="mb-16">
           <div className=" -mt-10 border-4 border-headerFooterColor rounded px-10 py-4">
             <div className="flex justify-center gap-10">
-              <p className="text-lg">{'index + 1'}.</p>
-              <p className="text-lg">{'ar.topicName'}</p>
+              <p className="text-lg">{'1'}.</p>
+              <p className="text-lg">{'Md. Abidur Rahman Abid'}</p>
             </div>
           </div>
         </div>
