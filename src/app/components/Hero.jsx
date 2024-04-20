@@ -16,7 +16,7 @@ const Hero = () => {
           <Image src={welcome} width={300} className='mx-auto mb-8'></Image>
         </div>
         <div className="mb-20">
-          <h1 className='lg:text-4xl text-2xl my-2 text-center font-bold '>Welcome To Markeable</h1>
+          <h1 className='lg:text-4xl text-2xl my-2 text-center font-bold '>Welcome To Makerble</h1>
           <p className='lg:text-2xl text-md my-4 text-center  rounded  font-bold px-10 py-2 mx-auto'>Take the stress out of monitoring, evaluation and reporting</p>
           <ul className='socialLink2 mt-4'>
                     <Link href={'/'} ><FaLinkedin/></Link>
