@@ -27,16 +27,16 @@ const Footer = () => {
                 </ul>
             </div>
             <div className='boxGroup'>
-                <Link href={'/contact'} className="cursor-pointer">
+                <Link href={'/receptionistportal'} className="cursor-pointer">
                 <div className='box'>
-                <svg className='mx-auto' xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="currentColor"><path d="M19.25 5.52l-8.574 7.6a1 1 0 0 1-1.331 0L.703 5.56c.064-.055.131-.105.203-.152L8.359.536a3 3 0 0 1 3.282 0l7.453 4.872c.054.035.106.073.156.113zM20 7.69V18a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V7.698l8.014 6.916a3 3 0 0 0 3.992 0L20 7.69z"></path></svg>
-                <p className='uppercase mt-2'>Email</p>
+                <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto" viewBox="-6 -2 24 24" width="20" fill="currentColor"><path d="M2 0h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 2v16h8V2H2zm2 7h1a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2z"></path></svg>
+                <p className='uppercase mt-2 text-center'>Receptionist</p>
                 </div>
                 </Link>
-               <Link href={'/articles'} className="cursor-pointer">
+               <Link href={'/doctorportal'} className="cursor-pointer">
                <div className='box'>
-               <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto" viewBox="-4 -2 24 24" width="20" fill="currentColor"><path d="M3 0h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3zm8 2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zM3 9a1 1 0 1 0 0 2h10a1 1 0 0 0 0-2H3zm0 3a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2H3zm0 3a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2H3zm8-10a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zM3 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H3z"></path></svg>
-                <p className='uppercase mt-2'>Articles</p>
+               <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto" viewBox="-2 -2 24 24" width="20" fill="currentColor"><path d="M7 12.917v.583a4.5 4.5 0 1 0 9 0v-1.67a3.001 3.001 0 1 1 2 0v1.67a6.5 6.5 0 1 1-13 0v-.583A6.002 6.002 0 0 1 0 7V2a2 2 0 0 1 2-2h1a1 1 0 1 1 0 2H2v5a4 4 0 1 0 8 0V2H9a1 1 0 1 1 0-2h1a2 2 0 0 1 2 2v5a6.002 6.002 0 0 1-5 5.917zM17 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path></svg>
+                <p className='uppercase mt-2 text-center'>Doctor</p>
                 </div>
                </Link>
             </div>

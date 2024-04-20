@@ -9,7 +9,7 @@ header, footer{
     @apply bg-headerFooterColor
 }
 header{
-    @apply -mt-20 lg:-mt-0
+    @apply -mt-28 lg:-mt-0
 }
 .header,.footer{
     @apply max-w-5xl mx-auto lg:flex justify-between items-center py-10
@@ -44,7 +44,7 @@ p{
     @apply text-base
 }
 .box{
-    @apply px-12 py-8 bg-transparent font-semibold text-black shadow shadow-primaryColor border-4 border-primaryColor rounded hover:scale-110 hover:duration-1000
+    @apply px-12 py-8 bg-transparent font-semibold text-gray-600 shadow shadow-primaryColor border-4 border-primaryColor rounded hover:scale-110 hover:duration-1000
 }
 
 .boxGroup{

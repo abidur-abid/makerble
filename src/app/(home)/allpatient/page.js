@@ -10,33 +10,33 @@ import toast from 'react-hot-toast';
 
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
-const TotalArticles = () => {
+const TotalPatients = () => {
   const router = useRouter();
-  const [posts, setPosts] = useState([]);
+  const [patients, setPatients] = useState([]);
 
-  const fetchPosts = async () => {
+  const fetchPatients = async () => {
     try {
       const res = await fetch(`${apiUrl}/api/post`, {
         cache: 'no-store',
       });
 
       if (!res.ok) {
-        throw new Error('Failed to fetch articles');
+        throw new Error('Failed to fetch patients');
       }
 
       const data = await res.json();
-      setPosts(data);
+      setPatients(data);
     } catch (error) {
-      console.error('Error loading posts: ', error);
-      toast.error('Failed to fetch articles');
+      console.error('Error loading patients: ', error);
+      toast.error('Failed to fetch patients');
     }
   };
 
   useEffect(() => {
-    fetchPosts();
-  }, [posts]); // Fetch data on component mount
+    fetchPatients();
+  }, [patients]); // Fetch data on component mount
 
-  const handleRemovePost = async (id) => {
+  const handleRemovePatient = async (id) => {
     const confirmed = confirm("Are you sure?");
 
     if (confirmed) {
@@ -45,43 +45,44 @@ const TotalArticles = () => {
       });
       
       if (res.ok) {
-        toast.success('Successfully Deleted Post')
+        toast.success('Successfully Deleted Patient')
         router.refresh();
       }
     }
   };
 
 
-  const postsArray = posts?.posts;
+  const patientsArray = patients?.patients;
   
 
   return (
     <section>
-      <div className="lg:-mt-20">
-        <SectionTitle title={'All Articles'} />
+      <div className='flex justify-center items-center gap-5 mb-20 mt-20 lg:mt-0'>
+                <Link href={'/receptionistportal'} className='button'>Register a patient</Link>
+                <Link href={'/allpatient'} className='button'>All patient</Link>
       </div>
-      {postsArray && postsArray.map((ar, index) => (
-        <div key={ar._id} className="mb-16">
+      {/* {patientsArray && patientsArray.map((ar, index) => ( */}
+        <div key={'ar._id'} className="mb-16">
           <div className="contactForm -mt-10 border-4 border-headerFooterColor rounded px-10 py-4">
             <div className="flex justify-center gap-1">
-              <p className="text-lg">{index + 1}</p>
-              <p className="text-lg">{ar.topicName}</p>
+              <p className="text-lg">{'index + 1'}</p>
+              <p className="text-lg">{'ar.topicName'}</p>
             </div>
             <div className="flex justify-center gap-5">
-              <button onClick={() => handleRemovePost(ar._id)}>
+              <button onClick={() => handleRemovePatient('ar._id')}>
                 <Link href={''} className="hover:font-bold text-xl">
                   <MdDelete />
                 </Link>
               </button>
-              <Link href={`/dashboard/totalarticles/${ar._id}`} className="hover:font-bold text-xl">
+              <Link href={`/allpatient/${'ar._id'}`} className="hover:font-bold text-xl">
                 <FaEdit />
               </Link>
             </div>
           </div>
         </div>
-      ))}
+      {/* ))} */}
     </section>
   );
 };
 
-export default TotalArticles;
+export default TotalPatients;
