@@ -29,7 +29,8 @@ export const middleware = async (request) => {
 // See "Matching Paths" below to learn more
 export const config = {
   matcher: [
-    "/dashboard/:path*",
+    "/receptionistportal/:path*",
+    "/doctorportal/:path*",
     "/login/:path*",
     "/register/:path*",
   ],
